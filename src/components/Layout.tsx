@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import Head from "next/head";
-import { useRouter } from "next/router";
-import type { ReactElement } from "react";
-import NavBar from "./Nav";
-import MobileNavBar from "./MobileNav";
-import { KBarProvider } from "kbar";
-import Palette from "./CMD";
-import { actions } from "../lib/actions";
-import { Toaster } from "react-hot-toast";
-import { useEffect, useRef } from "react";
-import { loadCursor } from "../lib/cursor";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import type { ReactElement } from 'react';
+import NavBar from './Nav';
+import MobileNavBar from './MobileNav';
+import { KBarProvider } from 'kbar';
+import Palette from './CMD';
+import { actions } from '../lib/actions';
+import { Toaster } from 'react-hot-toast';
+import { useEffect, useRef } from 'react';
+import { loadCursor } from '../lib/cursor';
 
 export default function Layout({
   children,
@@ -26,7 +26,7 @@ export default function Layout({
   const currentRoute = useRouter().pathname;
   const ballRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    if (typeof window === "undefined" || !ballRef.current) {
+    if (typeof window === 'undefined' || !ballRef.current) {
       return;
     }
 
@@ -37,16 +37,16 @@ export default function Layout({
     <div>
       <Head>
         <title>
-          {currentRoute === "/"
-            ? "bhaveek"
-            : `bhaveek // ${currentRoute.slice(1)}`}
+          {currentRoute === '/'
+            ? 'Bhaveek Jain'
+            : `Bhaveek Jain // ${currentRoute.slice(1)}`}
         </title>
         <meta name="description" content={description} />
         <meta name="theme-color" content="#27272a" />
-        <meta property="og:site_name" content="Bhaveek" />
+        <meta property="og:site_name" content="Bhaveek Jain" />
         <meta
           property="og:title"
-          content={`bhaveek${
+          content={`Bhaveek${
             currentRoute.slice(1).length > 1
               ? ` // ${currentRoute.slice(1)}`
               : ``
@@ -89,8 +89,8 @@ export default function Layout({
       <Toaster
         toastOptions={{
           style: {
-            background: "#27272a",
-            color: "#e4e4e7",
+            background: '#27272a',
+            color: '#e4e4e7',
           },
         }}
       />
