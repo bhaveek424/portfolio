@@ -2,48 +2,42 @@ import {
   FiHome,
   FiClock,
   FiPaperclip,
-  FiHeadphones,
   FiUser,
   FiSun,
   FiCommand,
   FiMoon,
   FiZap,
-} from "react-icons/fi";
-import { useRouter } from "next/router";
-import { useKBar } from "kbar";
-import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
+} from 'react-icons/fi';
+import { useRouter } from 'next/router';
+import { useKBar } from 'kbar';
+import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 
 const NavbarItems = [
   {
-    name: "Home",
-    slug: "/",
+    name: 'Home',
+    slug: '/',
     icon: FiHome,
   },
   {
-    name: "About",
-    slug: "/about",
+    name: 'About',
+    slug: '/about',
     icon: FiUser,
   },
   {
-    name: "Now",
-    slug: "/now",
+    name: 'Now',
+    slug: '/now',
     icon: FiClock,
   },
   {
-    name: "Links",
-    slug: "/links",
+    name: 'Links',
+    slug: '/links',
     icon: FiPaperclip,
   },
 
   {
-    name: "Spotify",
-    slug: "/spotify",
-    icon: FiHeadphones,
-  },
-  {
-    name: "Dashboard",
-    slug: "/dashboard",
+    name: 'Dashboard',
+    slug: '/dashboard',
     icon: FiZap,
   },
 ];
@@ -85,9 +79,9 @@ export default function MobileNavBar({ path }: { path: string }) {
         {mounted && (
           <button
             className="w-full flex justify-center items-center dark:bg-zinc-800 bg-zinc-700 dark:hover:bg-zinc-700 hover:bg-zinc-800 shadow hover:shadow-xl rounded hover:scale-110 duration-300 ease-in-out"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
             <div className="p-2 text-zinc-100">
-              {theme === "dark" ? <FiSun /> : <FiMoon />}
+              {theme === 'dark' ? <FiSun /> : <FiMoon />}
             </div>
           </button>
         )}
