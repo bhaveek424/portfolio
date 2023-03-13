@@ -18,16 +18,6 @@ export default function Footer() {
           bhaveek
         </a>
       </p>
-      <p className="dark:text-zinc-400 text-zinc-700 m-0 text-sm">
-        site template by{" "}
-        <a
-          className="dark:text-zinc-300 dark:hover:text-zinc-200 text-zinc-800 hover:text-zinc-900 duration-300 underline decoration-dotted underline-offset-4"
-          href="https://github.com/asrvd"
-          target={"_blank"}
-          rel="noreferrer">
-          ashish
-        </a>
-      </p>
     </footer>
   );
 }
