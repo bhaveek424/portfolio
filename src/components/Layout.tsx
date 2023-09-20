@@ -44,7 +44,7 @@ export default function Layout({
         <meta name="description" content={description} />
         <meta name="theme-color" content="#27272a" />
         <meta property="og:site_name" content="Bhaveek Jain" />
-        <meta property="og:url" content="Canonical link preview URL">
+        <meta property="og:url" content="Canonical link preview URL" />
         <meta
           property="og:title"
           content={`Bhaveek${
