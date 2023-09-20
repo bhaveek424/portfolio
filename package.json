@@ -1,6 +1,6 @@
 {
-  "name": "asrvd.me",
-  "version": "0.1.0",
+  "name": "bhaveek.me",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "build": "next build",
