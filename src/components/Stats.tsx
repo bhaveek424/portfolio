@@ -1,18 +1,18 @@
-import useSWR from "swr";
-import fetcher from "../lib/fetcher";
-import type { GithubStats } from "../lib/types";
-import { FiExternalLink } from "react-icons/fi";
-import { useState, useEffect } from "react";
+import useSWR from 'swr';
+import fetcher from '../lib/fetcher';
+import type { GithubStats } from '../lib/types';
+import { FiExternalLink } from 'react-icons/fi';
+import { useState, useEffect } from 'react';
 
 export default function Stats() {
   const { data: githubData } = useSWR<GithubStats>(
-    "/api/github-stats",
-    fetcher
+    '/api/github-stats',
+    fetcher,
   );
 
   const diffCalc = () => {
     const diff =
-      (new Date().getTime() - new Date("October 11, 2002").getTime()) /
+      (new Date().getTime() - new Date('October 11, 2002').getTime()) /
       1000 /
       60 /
       60 /
@@ -33,19 +33,19 @@ export default function Stats() {
 
   const statCards = [
     {
-      title: "My Age",
+      title: 'My Age',
       value: age,
-      link: "https://asrvd.me/about",
+      link: 'https://bhaveek.me/about',
     },
     {
-      title: "GitHub Stars",
+      title: 'GitHub Stars',
       value: githubData?.stars,
-      link: "https://github.com/bhaveek424",
+      link: 'https://github.com/bhaveek424',
     },
     {
-      title: "GitHub Followers",
+      title: 'GitHub Followers',
       value: githubData?.followers,
-      link: "https://github.com/bhaveek424?tab=followers",
+      link: 'https://github.com/bhaveek424?tab=followers',
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Stats() {
                 {card.title} <FiExternalLink />
               </a>
               <h3 className="text-zinc-900 dark:text-zinc-200 m-0">
-                {card.value || "-"}
+                {card.value || '-'}
               </h3>
             </div>
           );

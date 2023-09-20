@@ -19,6 +19,8 @@ export type TopTracksResponse = {
   artist: string;
 };
 
+
+
 export type Blog = {
   slug: string;
   url: string;
