@@ -15,4 +15,13 @@ function defineNextConfig(config) {
 export default defineNextConfig({
   reactStrictMode: true,
   swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: '/resume',
+        destination: 'https://drive.google.com/file/d/1_7PrzbuQ92lZAkbGf7mvQjqcd_beuOBh/view?usp=drive_link',
+        permanent: true,
+      },
+    ]
+  },
 });
