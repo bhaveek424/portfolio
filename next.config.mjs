@@ -19,7 +19,7 @@ export default defineNextConfig({
     return [
       {
         source: '/resume',
-        destination: 'https://drive.google.com/file/d/1_7PrzbuQ92lZAkbGf7mvQjqcd_beuOBh/view?usp=drive_link',
+        destination: 'https://drive.google.com/file/d/1fJ6akAHeFGUFuGLD85Y8B8dVHV7ELnQe/view?usp=sharing',
         permanent: true,
       },
     ]
