@@ -6,7 +6,6 @@ import {
   SiHashnode,
   SiDevdotto,
   SiLinkedin,
-  SiMdbook,
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
 
@@ -20,13 +19,6 @@ export type Link = {
 export type Links = Link[];
 
 export const links: Links = [
-  {
-    name: 'Resume',
-    url: 'https://bhaveek.me/resume',
-    value: 'Resume-BhaveekJain',
-    icon: SiMdbook
-    
-  },
   {
     name: 'Discord',
     url: 'https://discord.com/users/828994256987226132',
