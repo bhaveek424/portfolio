@@ -22,6 +22,11 @@ export default defineNextConfig({
         destination: 'https://drive.google.com/file/d/1fJ6akAHeFGUFuGLD85Y8B8dVHV7ELnQe/view?usp=sharing',
         permanent: true,
       },
+      {
+        source: '/github',
+        destination: 'https://github.com/bhaveek424',
+        permanent: true,
+      }
     ]
   },
 });
