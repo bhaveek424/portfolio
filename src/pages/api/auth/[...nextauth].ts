@@ -1,6 +1,4 @@
 import NextAuth, { type NextAuthOptions } from 'next-auth';
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import { prisma } from '../../../server/db/client';
 
 export const config = {
   runtime: 'nodejs',
@@ -17,7 +15,6 @@ export const authOptions: NextAuthOptions = {
     },
   },
 
-  adapter: PrismaAdapter(prisma),
   providers: [],
 };
 

@@ -2,17 +2,9 @@ import { z } from "zod";
 import { t, authedProcedure } from "../../../server/trpc/trpc";
 
 export const guestbookRouter = t.router({
-  getAllMessages: t.procedure.query(async ({ ctx }) => {
-    try {
-      const messages = await ctx.prisma.message.findMany({
-        orderBy: {
-          createdAt: "desc",
-        },
-      });
-      return messages;
-    } catch (error) {
-      console.log(error);
-    }
+  getAllMessages: t.procedure.query(async () => {
+    // TODO: Replace with actual data storage solution if needed
+    return [];
   }),
   addMessage: authedProcedure
     .input(
@@ -21,16 +13,11 @@ export const guestbookRouter = t.router({
       })
     )
     .mutation(async ({ ctx, input }) => {
-      try {
-        await ctx.prisma.message.create({
-          data: {
-            authorName: ctx?.session?.user?.name as string,
-            text: input.text,
-            authorId: ctx?.session?.user?.id,
-          },
-        });
-      } catch (error) {
-        console.log(error);
-      }
+      // TODO: Replace with actual data storage solution if needed
+      console.log("Message not saved (no database configured):", {
+        authorName: ctx?.session?.user?.name,
+        text: input.text,
+        authorId: ctx?.session?.user?.id,
+      });
     }),
 });
