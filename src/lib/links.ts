@@ -6,6 +6,7 @@ import {
   SiHashnode,
   SiDevdotto,
   SiLinkedin,
+  SiPagekit
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
 
@@ -62,4 +63,10 @@ export const links: Links = [
     value: '@bhaveek',
     icon: SiDevdotto,
   },
+  {
+    name: 'Resume',
+    url: 'https://drive.google.com/file/d/1h6mQtcOvpqU4aYJPUJd-CPqKgfqpwYXy/view?usp=sharing',
+    value: 'Resume',
+    icon: SiPagekit,
+  }
 ];

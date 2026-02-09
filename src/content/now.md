@@ -1,12 +1,17 @@
 ---
-publish_date: 31st December, 2022
+publish_date: 10th February, 2026
 ---
 
 #Now
 
 #### The answer to "What are you upto these days?"
 
-My End Semester exams are over so now I'm in a **beast** mode. I'm planning to learn and incorporate alot of typescript into my projects. There are so many technologies out there which I want to try and build apps on.
+I'm building FastSay—a dictation tool for macOS that turns your voice into text, instantly. Think Wispr Flow, but built from the ground up to be fast, local-first, and respect your privacy.
 
-Currently, I am building React apps and soon gonna try [Astro](!https://astro.build/) and [Svelte](!https://svelte.dev/).
-I'm also preparing myself for job interviews and will be reacing out to companies for jobs. This is it for this month ig, will update it in January now. Bye.
+But the most fun? Reverse engineering macOS apps to learn how great products are built. I've been tearing apart apps like Wispr Flow and Monologue—poking through .app bundles, analyzing frameworks, understanding how they capture audio, handle hotkeys, and paste text seamlessly. It's like reading the source code of a masterclass in native app development.
+
+Beyond FastSay, I'm constantly experimenting with new AI tools—Claude Code, Codex, Opencode—pushing them to see how far AI-assisted development can go. The goal: ship faster, think bigger.
+
+Currently excited about: Local LLMs, voice interfaces, and building tools that feel like magic.
+
+

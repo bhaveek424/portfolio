@@ -19,11 +19,10 @@ const Home = (props: { latestPosts: Blog[]; pinnedRepos: Repo[] }) => {
               Bhaveek Jain
             </h2>
             <p className="dark:text-zinc-300 text-zinc-800 mb-4 m-0">
-              Full Stack Developer
+              AI Full Stack Developer
             </p>
             <p className="dark:text-zinc-400 text-zinc-700 text-sm m-0">
-              Learning and trying to figure out web. Finance and Crypto
-              enthusiast on weekends.
+              Learning and trying to figure out web.
             </p>
           </div>
           <div className="min-w-fit">

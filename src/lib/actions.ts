@@ -6,6 +6,7 @@ import {
   FiBookmark,
   FiCode,
   FiZap,
+  FiAnchor
 } from "react-icons/fi";
 
 export const actions = [
@@ -53,6 +54,15 @@ export const actions = [
     perform: () => (window.location.pathname = "dashboard"),
     section: "Navigation",
     icon: FiZap({ size: "1rem" }),
+  },
+  {
+    id: "resume",
+    name: "Resume",
+    shortcut: ["r"],
+    keywords: "resume",
+    perform: () => window.open("https://drive.google.com/file/d/1h6mQtcOvpqU4aYJPUJd-CPqKgfqpwYXy/view?usp=sharing", "_blank"),
+    section: "External",
+    icon: FiAnchor({ size: "1rem" }),
   },
   {
     id: "blog",

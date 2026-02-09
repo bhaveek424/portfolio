@@ -1,5 +1,6 @@
 // src/pages/_app.tsx
 import '../styles/globals.css';
+import { useEffect } from 'react';
 import { SessionProvider } from 'next-auth/react';
 import type { Session } from 'next-auth';
 import type { AppType } from 'next/app';
@@ -7,11 +8,20 @@ import { trpc } from '../utils/trpc';
 import NextNProgress from 'nextjs-progressbar';
 import { ThemeProvider } from 'next-themes';
 import { Analytics } from '@vercel/analytics/react';
+import Clarity from '@microsoft/clarity';
+
+const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || '';
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
+  useEffect(() => {
+    if (CLARITY_PROJECT_ID) {
+      Clarity.init(CLARITY_PROJECT_ID);
+    }
+  }, []);
+
   return (
     <SessionProvider session={session}>
       <ThemeProvider attribute="class">
