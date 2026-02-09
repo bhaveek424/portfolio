@@ -18,4 +18,4 @@ My site uses all of these pieces of tech and [Planetscale's free tier](https://p
 
 ## usage
 
-This repo is MIT licensed, so you are free to use the code to create your own site, but please make sure you give proper credits to my own site and link my site in your site. That would help me create more open source projects which could be used by others freely, thank you!
+This repo is MIT licensed, so you are free to use the code to create your own site, but please make sure you give proper credits to my own site and link my site in your site. That would help me create more open source projects which could be used by others freely, thank you! 
