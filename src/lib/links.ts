@@ -65,7 +65,7 @@ export const links: Links = [
   },
   {
     name: 'Resume',
-    url: 'https://drive.google.com/file/d/1h6mQtcOvpqU4aYJPUJd-CPqKgfqpwYXy/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/18P_itUpV6z6pzd9D3PY-J1oOMknVqiZU/view?usp=sharing',
     value: 'Resume',
     icon: SiPagekit,
   }
