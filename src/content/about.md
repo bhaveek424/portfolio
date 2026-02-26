@@ -18,6 +18,5 @@ A Few Things I Believe
 
 When I'm not coding, you'll find me:
 
-- Exploring new cafés in Bengaluru ☕
 - Falling down YouTube rabbit holes about how things work
 - Occasionally attempting to cook (results vary)
